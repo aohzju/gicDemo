@@ -1,0 +1,7 @@
+#ifndef __CONFIG_H__
+#define __CONFIG_H__
+
+#cmakedefine	USE_ARM_LIB_STARTUP		/*If defined, ARM Library's __main will be used for scatter loading*/
+
+#endif //__CONFIG_H__
+

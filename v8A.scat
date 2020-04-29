@@ -1,0 +1,33 @@
+LOAD_CODE 0x0004000000
+{
+	CODEX 0x0004000000
+	{
+		* (+RO)
+	}
+}
+
+LOAD_DATA 0x0006000000
+{
+	RW_DATA 0x0080030000
+	{
+		* (+RW)
+	}
+	configData 0x8003F000
+	{
+		* (configData)
+	}
+	
+	ZI_DATA 0x0080040000
+	{
+		* (+ZI)
+	}
+	
+	ARM_LIB_STACK 0x00BFFFFFF0 EMPTY -0x20000
+	{}
+	
+	ARM_LIB_HEAP 0x0081000000 EMPTY 0x80000
+	{}
+	
+}
+
+
