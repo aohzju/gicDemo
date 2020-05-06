@@ -15,9 +15,6 @@ int array3[64]; //Global or statically allocated variables not explicitly initia
 				//Will goes to *COM* section by gcc if -fno-common is not used
 int array4[16] __attribute__((section("configData"))) = { 100, 101, 102, 103}; //A named data section
 
-#define GenCounterFreq	0x5F5E100	//100M
-#define TICK_CYCLES		(10*GenCounterFreq/1000) //10ms tick length
-
 
 int appmain(void) {
 

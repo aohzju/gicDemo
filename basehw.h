@@ -7,6 +7,9 @@
 
 #include <stdint.h>
 
+#define GenCounterFreq  0x5F5E100   //100M
+#define TICK_CYCLES     (10*GenCounterFreq/1000) //10ms tick length
+
 //Generic timer related:
 void setGenTimerFreq(int freq);
 uint64_t getPhyCount();
