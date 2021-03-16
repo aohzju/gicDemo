@@ -14,7 +14,7 @@ This demo application is incrementally built on top of [aohzju/embAppStartup](ht
  
  To run the demo:
  ```
- FVP_Base_RevC-2xAEMv8A -C bp.secure_memory=false -C bp.terminal_0.mode=raw -C bp.refcounter.non_arch_start_at_default=1 -C cluster0.gicv3.FIQEn-RAO=1 
+ FVP_Base_RevC-2xAEMv8A -C bp.secure_memory=false -C bp.terminal_0.mode=raw -C bp.refcounter.non_arch_start_at_default=1 -C cluster0.gicv3.FIQEn-RAO=1 -a appGicDemo.axf
  ```
  
  # ARM FVP
