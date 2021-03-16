@@ -12,9 +12,10 @@ This demo application is incrementally built on top of [aohzju/embAppStartup](ht
  
  Hopefully, you'll get appGicDemo.axf up to this point.
  
- To run the FVP, use these model parameters:
- 
- -C bp.secure_memory=false -C bp.terminal_0.mode=raw -C bp.refcounter.non_arch_start_at_default=1 -C cluster0.gicv3.FIQEn-RAO=1 
+ To run the demo:
+ ```
+ FVP_Base_RevC-2xAEMv8A -C bp.secure_memory=false -C bp.terminal_0.mode=raw -C bp.refcounter.non_arch_start_at_default=1 -C cluster0.gicv3.FIQEn-RAO=1 
+ ```
  
  # ARM FVP
  The virtual platform used in this application is FVP_Base_RevC-2xAEMv8A, which can be downloaded [here](https://developer.arm.com/tools-and-software/simulation-models/fixed-virtual-platforms). 
