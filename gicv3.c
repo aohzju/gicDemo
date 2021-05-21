@@ -44,7 +44,7 @@ void gicInit()
 	regVal = 0xFF;		//The minimal priority
 	setICC_PMR_EL1(regVal);
 
-	setICC_BPR0_EL1(0x01); //binary point: ggggg.ss. So all 5 bits are group bits, not supporting interrupt preemption.
+	setICC_BPR0_EL1(0x04); //binary point: .sssss. So all 5 bits are subpriority bits, not supporting interrupt preemption.
 
 	//ICC_CTLR_EL3:
 	regVal=getICC_CTLR_EL3();
